@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+body {
+    font-family: Arial, sans-serif;
+      background-color: whitesmoke;
+    color: black;
+    padding: 30px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* HEADER */
+.header {
+    border: 8px solid lightsteelblue;
+    border-radius: 0px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile-icon {
+    width: 150px;
+    height: 150px;
+    border: 0px solid lightsteelblue;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 65px;
+}
+
+
+.profile-info {
+    flex: 1;
+}
+
+.profile-info h1 {
+    font-size: 45px;
+    border-bottom: 2px solid black;
+    padding-bottom: 15px;
+    margin-bottom: 12px;
+}
+
+.profile-info p {
+    font-size: 22px;
+}
+
+
+.content {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 20px;
+}
+
+.left-column,
+.right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* CARD */
+.card {
+    border: 8px solid lightsteelblue;
+    border-radius: 0px;
+    overflow: hidden;
+}
+
+.card h2 {
+    font-size: 26px;
+    padding: 20px;
+    border-bottom: 0px solid whitesmoke;
+    background-color: lightsteelblue;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content p {
+    font-size: 17px;
+    margin-bottom: 18px;
+}
+
+.interests {
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 10px;
+    font-size: 18px;
+}
+
+
+.about {
+    margin-top: 25px;
+}
+
+.about .card-content p {
+    border-bottom: 2px solid black;
+    padding-bottom: 12px;
+}
+
+/* RESPONSIVE */
+ (max-width: 650px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .profile {
+        gap: 15px;
+    }
+
+    .profile-icon {
+        width: 90px;
+        height: 90px;
+        font-size: 40px;
+    }
+
+    .profile-info h1 {
+        font-size: 25px;
+    }
+
+    .profile-info p {
+        font-size: 14px;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+    .card h2 {
+        font-size: 22px;
+    }
+}

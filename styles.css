@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Profil */
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 30px;
+    border: 2px solid;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    min-height: 190px;
+}
+
+.foto {
+    width: 130px;
+    height: 130px;
+    min-width: 130px;
+    border: 2px solid;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.profile-info h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.profile-info p {
+    font-size: 14px;
+}
+
+/* Prestasi */
+.prestasi {
+    border: 2px solid;
+    border-radius: 18px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.prestasi h2,
+.box h2,
+.musik h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px dashed;
+    padding: 8px 0;
+}
+
+.item span {
+    border: 2px solid;
+    border-radius: 8px;
+    padding: 7px 12px;
+    font-size: 13px;
+    min-width: 65px;
+    text-align: center;
+}
+
+.item p {
+    font-size: 14px;
+}
+
+/* Hobi dan Favorit */
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.box {
+    border: 2px solid;
+    border-radius: 18px;
+    padding: 20px;
+    min-height: 220px;
+}
+
+.hobi {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.hobi span {
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 8px 15px;
+    font-size: 14px;
+}
+
+.box p {
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+/* Musik */
+.musik {
+    border: 2px solid;
+    border-radius: 18px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.video {
+    width: 100%;
+    height: 350px;
+    border: 2px solid;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.video iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.musik p {
+    font-size: 13px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 13px;
+}
+
+/* Tampilan HP */
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-info h1 {
+        font-size: 25px;
+    }
+
+    .row {
+        grid-template-columns: 1fr;
+    }
+
+    .video {
+        height: 220px;
+    }
+
+}
+
+
+
